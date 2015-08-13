@@ -1,28 +1,17 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This website displays government data of emergency calls from Seattle
+Included is a heat map based off of location, a pie chart about the reason for the call,
+and a bar chart for the time of the calls.
+Because the database has over 450,000 entries, I decided to only use about 4000.
 
-Things you may want to cover:
+Link to the database:
 
-* Ruby version
+http://catalog.data.gov/dataset/seattle-real-time-fire-911-calls-6cdf3
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Steps:
+1. bundle install
+2. rake db:create
+3. rake db:migrate
+4. rake db:seed
+5. rails s
