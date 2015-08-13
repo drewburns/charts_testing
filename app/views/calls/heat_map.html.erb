@@ -14,10 +14,10 @@
       }
       #panel {
         background-color: #fff;
-        border: 1px solid #999;
         left: 25%;
         padding: 5px;
-        position: absolute;
+        margin-left: 30%;
+        clear: both;
         top: 10px;
         z-index: 5;
       }
@@ -25,7 +25,7 @@
   </head>
 
   <body>
-    <div id="panel">
+    <div id="panel" >
       <button onclick="toggleHeatmap()">Toggle Heatmap</button>
       <button onclick="changeGradient()">Change gradient</button>
       <button onclick="changeRadius()">Change radius</button>
@@ -83,10 +83,13 @@ function changeOpacity() {
   heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
 }
 
+function getPoints() {
+  return [
+    <%= raw @points %>
+   ];
+}
 
-// Get points needed
 
-// new google.maps.LatLng(47.572371, -122.288833)
 
     </script>
     <script async defer

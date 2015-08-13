@@ -5,7 +5,7 @@
 Morris.Donut({
   element: 'graph',
 	  "data": [
-    {value: 47.0, label: 'Aid Response'},{value: 2.0, label: 'Rescue Elevator'},{value: 10.0, label: 'Auto Fire Alarm'},{value: 1.0, label: 'Medic Response- 6 per Rule'},{value: 13.0, label: 'Medic Response'},{value: 2.0, label: 'Automatic Fire Alarm Resd'},{value: 1.0, label: '1RED 1 Unit'},{value: 1.0, label: 'Hazardous Mat- Spill-Leak'},{value: 1.0, label: 'EVENT - Special Event'},{value: 2.0, label: 'Aid Response Yellow'},{value: 2.0, label: 'Medic Response- 7 per Rule'},{value: 1.0, label: 'Investigate Out Of Service'},{value: 7.0, label: 'Trans to AMR'},{value: 2.0, label: 'Brush Fire'},{value: 1.0, label: 'Bark Fire'},{value: 2.0, label: 'MVI - Motor Vehicle Incident'},{value: 1.0, label: 'Rubbish Fire'},{value: 1.0, label: 'Car Fire'},{value: 2.0, label: 'Activated CO Detector'}
+	   <%= raw @data %>
 		  ],
   formatter: function (x) { return x + "%"}
 }).on('click', function(i, row){

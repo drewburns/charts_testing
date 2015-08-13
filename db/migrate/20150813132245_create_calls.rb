@@ -3,7 +3,7 @@ class CreateCalls < ActiveRecord::Migration
     create_table :calls do |t|
     	t.string :address
     	t.string :call_type
-    	t.datetime :call_time
+    	t.string :call_time
     	t.string :location
       t.timestamps null: false
     end

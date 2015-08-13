@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20150813132245) do
   create_table "calls", force: :cascade do |t|
     t.string   "address"
     t.string   "call_type"
-    t.datetime "call_time"
+    t.string   "call_time"
     t.string   "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
