@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  root 'application#index'
+  root 'calls#heat_map'
   get 'heat_map' => 'calls#heat_map'
   get 'type' => 'calls#type'
   get 'time' => 'calls#time'
